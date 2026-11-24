@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Arcadia Coffee - Order Form</title>
+
+    <style>
+      body {
+        background-color: #fbf7f2;
+        font-family: Arial, sans-serif;
+        color: #3e2925;
+      }
+
+      h1 {
+        text-align: center;
+        color: #75434a;
+      }
+
+      form {
+        background-color: #f3e8dc;
+        width: 350px;
+        margin: auto;
+        padding: 25px;
+        border-radius: 8px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #75434a;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      a {
+        color: #75434a;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Arcadia Coffee Order Form</h1>
+
+    <form>
+      <label>Customer Name:</label>
+      <input type="text" name="customer" required />
+
+      <label>Contact Number:</label>
+      <input type="text" name="contact" required />
+
+      <label>Email:</label>
+      <input type="email" name="email" required />
+
+      <label>Select Your Drink:</label>
+      <select name="drink" required>
+        <option value="">Choose a drink</option>
+        <option>Coffee</option>
+        <option>Iced Coffee</option>
+        <option>Milk Tea</option>
+        <option>Chocolate</option>
+      </select>
+
+      <label>Select Your Food:</label>
+      <select name="food" required>
+        <option value="">Choose food</option>
+        <option>Sandwich</option>
+        <option>Croissant</option>
+        <option>Cake</option>
+        <option>Cookies</option>
+      </select>
+
+      <label>Quantity:</label>
+      <input type="number" name="quantity" min="1" required />
+
+      <label>Additional Requests:</label>
+      <textarea name="requests"></textarea>
+
+      <button type="submit">Submit Order</button>
+
+      <p><a href="index.html">Back to Home</a></p>
+    </form>
+  </body>
+</html>

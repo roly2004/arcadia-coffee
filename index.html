@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Arcadia Coffee Co.</title>
+
+    <style>
+      body {
+        margin: 0;
+        background-color: #fbf7f2;
+        font-family: Arial, sans-serif;
+        color: #3e2925;
+      }
+
+      header {
+        background-color: #f3e8dc;
+        padding: 15px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      header img {
+        width: 180px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #75434a;
+        margin: 10px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #d6a66f;
+      }
+
+      .home {
+        background-color: #75434a;
+        color: white;
+        text-align: center;
+        padding: 70px 20px;
+      }
+
+      .home h1 {
+        font-size: 40px;
+      }
+
+      .home p {
+        font-size: 17px;
+      }
+
+      button {
+        background-color: #d6a66f;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #3e2925;
+      }
+
+      .menu {
+        text-align: center;
+        padding: 35px 20px;
+      }
+
+      .menu h2 {
+        color: #75434a;
+      }
+
+      .items {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .item {
+        background-color: #f3e8dc;
+        padding: 25px;
+        width: 220px;
+        border-radius: 8px;
+      }
+
+      .item h3 {
+        color: #75434a;
+      }
+
+      .about {
+        background-color: #75434a;
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      footer {
+        background-color: #3e2925;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          flex-direction: column;
+        }
+
+        nav {
+          margin-top: 15px;
+        }
+
+        nav a {
+          margin: 5px;
+        }
+
+        .items {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header>
+      <img src="arcadia_logo_fixed.png" alt="Arcadia Coffee Logo" />
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="form.html">Order</a>
+      </nav>
+    </header>
+
+    <!--HOME-->
+    <div class="home" id="home">
+      <h1>Welcome to Arcadia Coffee Co.</h1>
+
+      <p>
+        A little pause, a lot of comfort. Enjoy your favorite drinks and food
+        with us!
+      </p>
+
+      <a href="form.html">
+        <button>Order Now</button>
+      </a>
+    </div>
+
+    <!--MENU-->
+    <div class="menu" id="menu">
+      <h2>Our Menu</h2>
+
+      <p>Discover what Arcadia has to offer.</p>
+
+      <div class="items">
+        <div class="item">
+          <h3>Coffee</h3>
+          <p>Enjoy our delicious coffee made for every coffee lover.</p>
+        </div>
+
+        <div class="item">
+          <h3>Other Drinks</h3>
+          <p>Refreshing drinks for every mood and occasion</p>
+        </div>
+
+        <div class="item">
+          <h3>Food</h3>
+          <p>Delicious snacks and food to enjoy with your drinks.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--ABOUT-->
+    <div class="about" id="about">
+      <h2>About Arcadia</h2>
+
+      <p>
+        Arcadia Coffee Co. is a place where people can enjoy coffee, drinks, and
+        food.
+      </p>
+
+      <p>
+        We want to give our customers a comfortable and relaxing experience.
+      </p>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+      <p>Arcadia Coffee Co.</p>
+      <p>© 2026 All Rights Reserved.</p>
+    </footer>
+
+    <!--JAVASCRIPT-->
+    <script>
+      alert("Welcome to Arcadia Coffee Co.");
+    </script>
+  </body>
+</html>
